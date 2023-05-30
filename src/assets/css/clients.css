@@ -1,0 +1,88 @@
+.client-section{
+    position: relative;
+    padding: 80px 0 0;
+    /*background: #f5fbff; */
+}
+
+.client-section.ab-service{
+    padding-bottom: 90px;
+}
+
+.client-section h2 {
+    color: #000000;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 31px;
+}
+
+.client-section span {
+    display: block;
+    color: #2f3c7e;
+}
+.client-item {
+    position: relative;
+    background: #fff ;
+    margin-bottom: 20px;
+    padding: 50px 45px;
+    -webkit-box-shadow: 0px 10px 20px 0px #95b7d0;
+    -moz-box-shadow:    0px 10px 20px 0px #95b7d0;
+    box-shadow:         0px 10px 20px 0px #95b7d0;
+}
+
+.client-item:after{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 5px;
+    border-color: transparent transparent ;
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+}
+
+.client-item .cl-top{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 33px;
+}
+
+.client-item .cl-top img{
+    height: 70px;
+    transition: all 0.64s ease;
+}
+
+
+.client-item .cl-top img:hover{
+    opacity: 0.5;
+}
+
+hr.hr-text {
+    position: relative;
+    border-top: 2px solid #313131;
+    border-width: 2px;
+    padding: 8px;
+    width: 100px; 
+    margin: 2px auto;
+    opacity: 0.8;
+}
+
+
+@media (min-width: 992px) and (max-width: 1199px){
+    .client-section .sec-title {
+	    margin-bottom: 60px;
+	}
+}
+
+@media (max-width: 991px){
+    .client-section .sec-title {
+	    margin-bottom: 60px;
+	}
+}
+
+@media (max-width: 767px){
+    .client-section .sec-title {
+	    margin-bottom: 60px;
+	}
+}

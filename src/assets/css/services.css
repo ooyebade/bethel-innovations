@@ -1,0 +1,187 @@
+.services-banner{
+    position: relative;
+    padding: 205px 0 0;
+    min-height: 425px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+.services-banner:after{
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(20, 33, 43, .6);
+}
+.services-content {
+    position: relative;
+    z-index: 3;
+    margin-left: -40px;
+}
+
+.services-content h2{
+    text-align: center;
+    font-size: 46px;
+    line-height: 52px;
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: -2.16px;
+    margin: 0;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+    font-family: "Poppins", Sans-serif;
+}
+
+
+.services-content h4{
+    text-align: center;
+    font-size: 16px;
+    line-height: 52px;
+    color: #fff;
+    font-weight: 500;
+    margin: 0;
+    padding-bottom: 15px;
+    font-family: "Poppins", Sans-serif;
+}
+
+.solutions-section {
+    position: relative;
+    padding: 75px 0;
+    background-image: url('../img/solutions.jpg');
+    background-position: 30px;
+    background-repeat: no-repeat;
+    background-size: 40% 55%;
+    margin: 35px;
+    -webkit-box-shadow: 0px 10px 20px 0px #000;
+    -moz-box-shadow:    0px 10px 20px 0px #000;
+    box-shadow:         0px 10px 20px 0px #000;
+}
+
+.cism-section {
+    position: relative;
+    padding: 75px 0;
+    background-image: url('../img/ci.jpg');
+    background-color: #dbdce5;
+    background-position: 30px;
+    background-repeat: no-repeat;
+    background-size: 40% 55%;
+    margin: 35px;
+    -webkit-box-shadow: 0px 10px 20px 0px #000;
+    -moz-box-shadow:    0px 10px 20px 0px #000;
+    box-shadow:         0px 10px 20px 0px #000;
+}
+
+.enterprise-section {
+    position: relative;
+    padding: 75px 0;
+    background-image: url('../img/enterprise.jfif');
+    background-position: 30px;
+    background-repeat: no-repeat;
+    background-size: 40% 55%;
+    margin: 35px;
+    -webkit-box-shadow: 0px 10px 20px 0px #000;
+    -moz-box-shadow:    0px 10px 20px 0px #000;
+    box-shadow:         0px 10px 20px 0px #000;
+}
+
+.services-thumb{
+   position: relative;
+}
+
+.service-content {
+    position: relative;
+    padding-left: 0;
+    padding-top: 15px;
+}
+
+.services-content .sub-title {
+    text-transform: uppercase;
+}
+
+.services-content > p {
+    font-family: "Poppins", Sans-serif;
+    line-height: 33px;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+@media only screen and (max-width: 600px) {
+    .solutions-section {
+        margin: 35px;
+        padding: 20px;
+    }
+
+    .cism-section {
+        margin: 35px;
+        padding: 20px;
+    }
+
+    .service-content > p {
+        margin: 20px;
+    }
+
+    .enterprise-section {
+        margin: 35px;
+        padding: 20px;
+    }
+
+    .sub-title {
+        margin: 50px;
+        padding: 20px;
+    }
+	
+}
+
+@media (max-width: 767px){
+    .solutions-section {
+        margin: 0 0 0 ;
+        padding: 0 0 0;
+    }
+
+    .cism-section {
+        margin: 0 0 0;
+        padding: 0 0 0;
+    }
+
+    .service-content > p {
+        margin-left: 190px;
+    }
+
+    .enterprise-section {
+        margin: 0 0 0;
+        padding: 0 0 0;
+    }
+
+    .sub-title {
+        margin: 50px;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 991px){
+    .solutions-section {
+        margin: 35px;
+        padding: 0;
+    }
+
+    .cism-section {
+        margin: 35px;
+        padding: 0;
+    }
+
+    .service-content > p {
+        margin-left: 0;
+    }
+
+    .enterprise-section {
+        margin: 35px;
+        padding: 0;
+    }
+
+    .sub-title {
+        margin: 20px;
+        padding: 10px;
+    }
+}

@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap');
+
+body{
+  font-family: 'Roboto', sans-serif;  
+  font-size: 16px;
+  line-height: 28px;
+  color: #14212b;
+  letter-spacing: 0;
+  font-weight: 400;
+  word-break: break-word;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Poppins', sans-serif;
+    color: #14212b;
+    font-weight: 600;
+    letter-spacing: 0;
+    margin: 0 0 15px;
+    line-height: 1.2;
+}
+
+span {
+    font-family: "Montserrat", Sans-serif;
+}
+
+a{
+    color: #14212b;
+    text-decoration: none;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+a:hover{
+    color: #000;
+    text-decoration: none;
+}
+a:focus{
+    outline: 0;
+    text-shadow: none;
+    box-shadow: none;
+}
+
+/* scrollBar */
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #555;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #555;
+    border-radius: 10px;
+    transition: 0.3s;
+  }
+
+.sub-title{
+    font-size: 24px;
+    color: #14212b;
+    line-height: 20px;
+    font-weight: 700;
+    margin: 0 0 16px;
+}
+.sub-title .border-left{
+    background: #2f3c7e;
+    display: inline-block;
+    width: 4px;
+    height: 30px;
+    left: -20px;
+    top: 10px;
+    border: none !important;
+    position: relative;
+}
+
+@media screen and (max-width: 400px) {
+  body {
+    overflow-x: hidden;
+  }
+}
+  
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3) {
+  body {
+    overflow-x: hidden;
+  }
+}

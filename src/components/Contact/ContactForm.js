@@ -1,51 +1,78 @@
-import { useForm } from 'react-hook-form';
+import React, { useRef, useState } from 'react';
+import emailjs from '@emailjs/browser';
+import isEmail from 'validator/lib/isEmail';
+import ContactFormUi from './ContactFormUi';
 
 const ContactForm = () => {
 
-    const { register, handleSubmit, formState: { errors } } = useForm();
-    const onSubmit = data => console.log(data);
+    const [open, setOpen] = useState(false);
+
+    const[subject, setSubject] = useState('');
+    const [name, setName] = useState('');
+    const [phone, setPhone] = useState('');
+    const [email, setEmail] = useState('');
+    const [message, setMessage] = useState('');
+    const [success, setSuccess] = useState(false);
+    const [errMsg, setErrMsg] = useState('');
+    const form = useRef();
+  
+    const handleClose = (event, reason) => {
+      if (reason === 'clickaway') {
+        return;
+      }
+  
+      setOpen(false);
+    };
+
+
+    const handleContactForm = (e) => {
+        e.preventDefault();
+    
+        if (name && email && message) {
+          if (isEmail(email)) {
+            emailjs.sendForm('testgmail', 'test_template', form.current, 'O-ggGSpn8terRIiHx')
+              .then((result) => {
+                console.log('success');
+                setSuccess(true);
+                setErrMsg('');
+                setSubject('');
+                setName('');
+                setPhone('');
+                setEmail('');
+                setMessage('');
+                setOpen(false);
+              }, (error) => {
+                console.log(error.text);
+              });
+          } else {
+            setErrMsg('Invalid email');
+            setOpen(true);
+          }
+        } else {
+          setErrMsg('Enter all the fields');
+          setOpen(true);
+        }
+    };
 
     return (
-        <form onSubmit={handleSubmit(onSubmit)} className="row">
-            <div className="col-md-6">
-                <div className="input-form">
-                    <i className="fa fa-user"></i>
-                    <input {...register("name", { required: true })} type="text" name="name" placeholder="Enter your name" />
-                    {errors.name && <span className="text-danger">Name is required</span>}
-                </div>
-            </div>
-            <div className="col-md-6">
-                <div className="input-form">
-                    <i className="fa fa-envelope"></i>
-                    <input {...register("email", { required: true })} type="email" name="email" placeholder="Enter your email" />
-                    {errors.email && <span className="text-danger">Email is required</span>}
-                </div>
-            </div>
-            <div className="col-md-6">
-                <div className="input-form">
-                    <i className="fa fa-phone"></i>
-                    <input {...register("phone", { required: true })} type="text" name="phone" placeholder="Phone number" />
-                    {errors.phone && <span className="text-danger">Phone Number is required</span>}
-                </div>
-            </div>
-            <div className="col-md-6">
-                <div className="input-form">
-                    <i className="fa fa-pencil-alt"></i>
-                    <input {...register("subject", { required: true })} type="text" name="subject" placeholder="Subject" />
-                    {errors.subject && <span className="text-danger">Subject is required</span>}
-                </div>
-            </div>
-            <div className="col-md-12">
-                <div className="input-form">
-                    <i className="fa fa-edit"></i>
-                    <textarea {...register("message", { required: true })} name="message" placeholder="Enter your message"></textarea>
-                    {errors.message && <span className="text-danger">Message is required</span>}
-                </div>
-            </div>
-            <div className="col-md-12 text-center">
-                <button className="contactbtn" type="submit">Send Message<i className="fa fa-long-arrow-right"></i></button>
-            </div>
-        </form>
+        <ContactFormUi
+        open={open}
+        success={success}
+        errMsg={errMsg}
+        handleClose={handleClose}
+        handleContactForm={handleContactForm}
+        subject={subject}
+        setSubject={setSubject}
+        name={name}
+        setName={setName}
+        phone={phone}
+        setPhone={setPhone}
+        form={form}
+        email={email}
+        setEmail={setEmail}
+        message={message}
+        setMessage={setMessage}
+      />
     )
 }
 

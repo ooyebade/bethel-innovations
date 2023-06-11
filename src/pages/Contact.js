@@ -7,7 +7,8 @@ import '../assets/css/contact.css';
 
 const contactInfo = {
     tel: "(301) 351-8653",
-    location: "Burke, VA 22015"
+    location: "Burke, VA 22015",
+    email: 'info@bethelinnovations.com'
 }; 
 
 const Contact = () => {

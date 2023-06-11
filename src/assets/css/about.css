@@ -1,12 +1,13 @@
 .about-section{
     position: relative;
+    background-color: rgb(244, 242, 241);
     padding: 55px 0;
 }
 .about-thumb{
    position: relative; 
 }
 .about-thumb img{
-    max-width: 100%;
+    max-width: 90%;
     height: auto;
 }
 .ab-content{

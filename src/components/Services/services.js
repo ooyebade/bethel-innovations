@@ -2,7 +2,6 @@ import React from "react";
 
 import Hero5 from '../../components/Hero/Hero5';
 
-import Solution from '../../assets/img/solutions.jpg';
 
 import '../../assets/css/services.css';
 

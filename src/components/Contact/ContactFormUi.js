@@ -32,6 +32,8 @@ const ContactFormUi = () => {
                     />
                 </div>
             </div>
+            
+            {/** 
             <div className="col-md-6">
                 <div className="input-form">
                     <i className="fa fa-phone"></i>
@@ -40,6 +42,8 @@ const ContactFormUi = () => {
                     />
                 </div>
             </div>
+
+            
             <div className="col-md-6">
                 <div className="input-form">
                     <i className="fa fa-pencil-alt"></i>
@@ -48,6 +52,8 @@ const ContactFormUi = () => {
                     />
                 </div>
             </div>
+            */}
+
             <div className="col-md-12">
                 <div className="input-form">
                     <i className="fa fa-edit"></i>

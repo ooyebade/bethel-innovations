@@ -1,8 +1,8 @@
 import Hero2 from "../components/Hero/Hero2";
-import ContactForm from "../components/Contact/ContactForm";
 import ContactSide from "../components/Contact/ContactSide";
 
 import '../assets/css/contact.css';
+import ContactFormUi from "../components/Contact/ContactFormUi";
 
 
 const contactInfo = {
@@ -30,7 +30,7 @@ const Contact = () => {
                     <div className="row">
                         <div className="col-lg-8">
                             <div className="contact-page-form">
-                                <ContactForm />
+                                <ContactFormUi />
                             </div>
                         </div>
 

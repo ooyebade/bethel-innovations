@@ -110,21 +110,24 @@
 @media only screen and (max-width: 600px) {
     .solutions-section {
         margin: 35px;
+        background-position: 30px 135px;
+        background-size: 40% 30%;
         padding: 20px;
     }
 
     .cism-section {
         margin: 35px;
+        background-position: 30px 135px;
+        background-size: 40% 30%;
         padding: 20px;
     }
 
-    .service-content > p {
-        margin: 20px;
-    }
 
     .enterprise-section {
         margin: 35px;
         padding: 20px;
+        background-position: 30px 135px;
+        background-size: 40% 30%;
     }
 
     .sub-title {
@@ -172,7 +175,8 @@
     }
 
     .service-content > p {
-        margin-left: 0;
+        margin-left: 55%;
+        padding-right: 3%;
     }
 
     .enterprise-section {

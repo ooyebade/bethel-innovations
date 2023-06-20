@@ -2,6 +2,8 @@ import React from "react";
 
 import Hero5 from '../../components/Hero/Hero5';
 
+import Solution from '../../assets/img/solutions.jpg';
+
 import '../../assets/css/services.css';
 
 const Services = () => {
@@ -18,7 +20,9 @@ const Services = () => {
             <div className="container">
                 <div className="row">
                     <div className="col-lg-6 col-md-6">
-                        <div className="services-thumb" />
+                        <div className="services-thumb">
+                            {/**<img src={Solution} alt="solution" />*/}
+                        </div>
                     </div>
 
                     <div className="col-lg-6 col-md-6">

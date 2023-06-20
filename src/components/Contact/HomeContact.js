@@ -1,7 +1,8 @@
-import ContactForm from "./ContactForm";
+//import ContactForm from "./ContactForm";
 // import ContactSide from "./ContactSide";
 
 import '../../assets/css/contact.css';
+import ContactFormUi from "./ContactFormUi";
 
 /** 
 const contactInfo = {
@@ -27,7 +28,7 @@ const HomeContact = () => {
                     <div className="row justify-content-center">
                         <div className="col-lg-8">
                             <div className="contact-page-form">
-                                <ContactForm />
+                                <ContactFormUi />
                             </div>
                         </div>
                     </div>

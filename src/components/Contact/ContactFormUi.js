@@ -10,12 +10,15 @@ const ContactFormUi = () => {
     }
 
     function sendEmail() {
+        
+        var body = document.getElementById('message').value;
+        var subjectLine = document.getElementById('subject').value;
 
-        window.location.href = 'mailto:oyebadeoyinda14@gmail.com?subject';
+        window.location.href = 'mailto:oyebadeoyinda14@gmail.com?subject='+subjectLine+'&body='+body;
     }
 
     return (
-        <form onSubmit={handleSubmit} className="row">
+        <form onSubmit={sendEmail} method='GET' className="row">
             <div className="col-md-6">
                 <div className="input-form">
                     <i className="fa fa-user"></i>
@@ -32,7 +35,7 @@ const ContactFormUi = () => {
                     />
                 </div>
             </div>
-            
+
             {/** 
             <div className="col-md-6">
                 <div className="input-form">
@@ -42,7 +45,7 @@ const ContactFormUi = () => {
                     />
                 </div>
             </div>
-
+            */}
             
             <div className="col-md-6">
                 <div className="input-form">
@@ -52,7 +55,7 @@ const ContactFormUi = () => {
                     />
                 </div>
             </div>
-            */}
+            
 
             <div className="col-md-12">
                 <div className="input-form">
@@ -63,7 +66,7 @@ const ContactFormUi = () => {
                 </div>
             </div>
             <div className="col-md-12 text-center">
-                <button className="contactbtn" type="submit" onClick={sendEmail} method="GET">Send Message<i className="fa fa-long-arrow-right"></i></button>
+                <button className="contactbtn" type="submit" onSubmit={handleSubmit} method="GET">Send Message<i className="fa fa-long-arrow-right"></i></button>
             </div>
         </form>
    )

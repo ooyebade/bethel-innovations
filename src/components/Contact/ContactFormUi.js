@@ -14,7 +14,7 @@ const ContactFormUi = () => {
         var body = document.getElementById('message').value;
         var subjectLine = document.getElementById('subject').value;
 
-        window.location.href = 'mailto:oyebadeoyinda14@gmail.com?subject='+subjectLine+'&body='+body;
+        window.location.href = 'mailto:info@bethelinnovations.com?subject='+subjectLine+'&body='+body;
     }
 
     return (

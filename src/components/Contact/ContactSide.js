@@ -16,7 +16,7 @@ const ContactSide = ({ contactInfo }) => {
                 <i className="fa fa-envelope"></i>
                     <h3>Email</h3>
                     <p>
-                        {contactInfo.email}
+                        <a href='mailto:info@bethelinnovations.com'>{contactInfo.email}</a>
                     </p>
             </div>
 

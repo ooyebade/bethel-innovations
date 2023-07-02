@@ -96,6 +96,12 @@
     font-size: 15px;
 }
 
+.contact-box a{
+    margin: 0;
+    color: white;
+    font-size: 15px;
+}
+
 .contact-form{
     position: relative;
     background: #fff;
